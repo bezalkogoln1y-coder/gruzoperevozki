@@ -8,6 +8,22 @@ a:hover {
     opacity: .8;
 }
 
+.btn {
+    padding: 10px 0;
+    width: 100%;
+    background: #de4848;
+    border:  2px solid #6f2f16;
+    color: white;
+    transition: .5s;
+}
+
+.btn[disabled="disabled"] {
+    background-color: gray;
+    cursor: inherit;
+    border: 2px solid lightgray;
+    transition: .5s;
+}
+
 nav {
     padding: 20px 0;
 }
@@ -56,7 +72,7 @@ p:last-child {
 h2.super {
     font-size: 48px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 header a {
@@ -186,4 +202,91 @@ h1 {
 
 #form {
     margin-top: 100px;
+}
+
+#form .sent {
+    padding: 40px;
+    background-color: #f6f6f6;
+}
+
+#form .sent h2 {
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#form .sent input {
+    width: 100%;
+    border: none;
+    padding: 20px 15px 20px;
+}
+
+#form .sent input[type="checkbox"] {
+    width: 3%;
+    padding-right: 15px;
+}
+
+#form .sent textarea {
+    width: 100%;
+    padding: 20px 15px 20px;
+    border: none;
+    resize: none;
+}
+
+#contacts {
+    margin-top: 80px;
+}
+
+#contacts > div {
+    background: url(../img/background-footer.png);
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts hr {
+    height: 2px;
+    margin: 45px auto 30px;
+}
+
+#contacts .contacts-footer h2.super {
+    background-image: url(/img/whatsapp.png);
+    background-repeat: no-repeat;
+    padding-left: 0;
+    background-position: left center;
+    text-align: center;
+}
+
+#contacts .contacts-footer h2.super a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#contacts p.text-blue {
+    text-transform: uppercase;
+    color: #161770;
+    text-align: center;
+}
+
+#contacts p.text {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer > div {
+    background: url(../img/background-footer1.png);
+    padding: 35px 0;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer > div a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-menu li {
+    margin-bottom: 15px;
 }

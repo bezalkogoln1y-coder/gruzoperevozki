@@ -24,20 +24,20 @@
                     <div class="col-lg-6">
                         <ul class="nav-list">
                             <li class="nav-item">
-                                <a href="#">О компании</a>
+                                <a href="#text-block">О компании</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Карта партнера</a>
+                                <a href="#form">Карта партнера</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#">Контакты</a>
+                                <a href="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <div class="contacts-header">
-                            <p class="mb-1"><a href="">+7 (917) 230-88-03</a></p>
-                            <p><a href="">+7 (962) 579-53-03</a></p>
+                            <p class="mb-1"><a href="tel:79172308803">+7 (917) 230-88-03</a></p>
+                            <p><a href="tel:79625795303">+7 (962) 579-53-03</a></p>
                         </div>
                     </div>
                 </div>
@@ -134,19 +134,56 @@
                     <div class="col-lg-6">
                         <form class="sent">
                             <h2>Обратная связь</h2>
-                            <p><input type="text" placeholder="Имя *"></p>
-                            <p><input type="text" placeholder="Телефон *"></p>
-                            <p><input type="text" placeholder="Email"></p>
-                            <p><textarea placeholder="Сообщение"></textarea></p>
-                            <p><input type="checkbox" placeholder=""><span>даю согласие на обработку персональных данных</span></p>
+                            <p><input type="text" name="name" id="name" placeholder="Имя *" required></p>
+                            <p><input type="text" nWame="phone" id="phone" placeholder="Телефон *" requiredW></p>
+                            <p><input type="text" name="email" id="email" placeholder="Email"></p>
+                            <p><textarea name="messageF" id="messageF" placeholder="Сообщение"></textarea></p>
+                            <p class="mb-5"><input id="accept" type="checkbox" placeholder="" value="Нет"><span>даю согласие на обработку персональных данных</span></p>
+                            <button class="btn" type="submit" disabled="disabled">Отправить</button>
+                            <p class="under-btn">* - поля обязательные для заполнения</p>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 contacts-footer">
+                        <hr>
+                        <p class="text-blue">Мы открыты к сотрудничеству!</p>
+                        <h2 class="super"><a href="">+7 (917) 230-88-03</a></h2>
+                        <h2 class="super"><a href="">+7 (962) 579-53-03</a></h2>
+                        <p class="text">Набережные Челны</p>
+                        <p class="text">office2bexpress@yandex.ru</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-lg-3">
+                    <p><a href="#"><i class="fa fa-map-marker pr-1"></i>Набережные Челны</a></p>
+                    <p><a href="tel:79172308803">+7 (917) 230-88-03</a></p>
+                    <p class="email"><a href="mailto:office2bexpress@yandex.ru"><i class="fa fa-envelope pr-1"></i>office2bexpress@yandex.ru</a></p>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="footer-menu">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p class="text-gray">© 2019 - Dilectum<br>
+                    Веб студия
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/slick.min.js"></script>
